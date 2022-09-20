@@ -14,16 +14,21 @@ body{
   font-style: normal;
   color: aliceblue;
   font-weight: 400;
+  background-color: #1e1e1e !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   }
 .App{
   width: 90vw;
-  height: 5vh;
+  height: 100%;
 }
+
 /* HEADER */
 .nav-completo{
   width: 100%;
   padding: 5vw;
-  padding-top: 0;
+  padding-top: 1.5rem;
   padding-bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -39,9 +44,44 @@ body{
   font-style:normal !important;
   font-weight: 400 !important;
   cursor: pointer;
+  text-decoration: none;
   transition: 0.2s;
 }
 .link-nav:hover{
   text-shadow: 0px 6px 6px rgba(255, 255, 255, 0.6);
   transition: 0.2s;
+  
+}
+/* INICIO */
+.inicio{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
+  height: 70vh;
+}
+.inicio-texto{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.primera-linea{
+  display: flex ;
+}
+h1{
+  color: aliceblue !important;
+  font-family: 'JetBrains Mono', sans-serif !important;
+  font-style:normal !important;
+  align-self: center;
+}
+.nombre{
+  color: #9E38B8 !important;
+  margin-left: 0.8rem
+}
+.foto{
+  max-width: 18vw;
+  max-height: auto;
+  
+}
+.contenedor-foto{
+  align-self: center;
 }
