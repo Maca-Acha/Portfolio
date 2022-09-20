@@ -24,7 +24,7 @@ body{
   height: 100%;
 }
 
-/* HEADER */
+/* NAVEGACION */
 .nav-completo{
   width: 100%;
   padding: 5vw;
@@ -56,8 +56,7 @@ body{
 .inicio{
   display: flex;
   justify-content: space-around;
-  padding-top: 5rem;
-  height: 70vh;
+  height: 100vh;
 }
 .inicio-texto{
   display: flex;
@@ -84,4 +83,25 @@ h1{
 }
 .contenedor-foto{
   align-self: center;
+}
+
+/* SOBRE MI */
+.sobre-mi{
+  margin-left: 3vw;
+}
+.titulo{
+  color: #3DC9B0 !important;
+  font-family: 'JetBrains Mono', sans-serif !important;
+  font-style:normal !important;
+}
+.texto-cuerpo{
+  margin-left: 5vw;
+  margin-right: 3vw;
+  color: aliceblue !important;
+  font-family: 'JetBrains Mono', sans-serif !important;
+  font-style:normal !important;
+  font-size: 1.2rem;
+}
+.detalle{
+  color: #F5DA4A !important;
 }

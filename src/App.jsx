@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import Navigation from './componentes/Navegacion'
 import Inicio from './componentes/inicio'
+import SobreMi from './componentes/sobreMi'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,7 +13,8 @@ function App() {
     
       <div className="App">
         <Navigation/>
-        <Inicio/>
+        <Inicio />
+        <SobreMi/>
       </div>
 
   )

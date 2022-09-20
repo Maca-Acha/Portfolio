@@ -13,7 +13,7 @@ export default function inicio() {
             </div>
             <div className="contenedor-foto">
                 <img alt="foto" src={foto} className="foto" />
-            </div>
+            </div>            
         </div>
     )
 }
