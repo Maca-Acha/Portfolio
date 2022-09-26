@@ -1,9 +1,10 @@
 export default function SobreMi() {
 
     return (
-        <div className="sobre-mi">
-            <div>
+        <div className="contenedor-textos">
+            <div className="back-titulo">
                 <h2 className="titulo">Sobre mi</h2>
+                <div className="subrayado"></div>
             </div>
                 <p className="texto-cuerpo">
                 Hola mi nombre es Macarena, soy programadora <span className="detalle">Full Stack en MERN</span> (MongDB, Express, React, Node). Gracias a mi paso en Mindhub, de más de 600 horas, modalidad full time, simulando un ambiente real, desarrollé distintos proyectos grupales e individuales, los cuales podrás observar mi Github.
@@ -15,9 +16,7 @@ export default function SobreMi() {
                 Busco la oportunidad de insertarme laboralmente dispuesta a capacitarme para mejorar mis capacidades, e integrarme en el mundo digital que es lo que me apasiona. 
 
                 </p>
-            <div>
-                <h2 className="titulo">Sobre mi</h2>
-            </div>
+            
         </div>
     )
 }

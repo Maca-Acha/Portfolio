@@ -31,7 +31,7 @@ body{
   padding-top: 1.5rem;
   padding-bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .nav{
   width: 30%;
@@ -86,17 +86,23 @@ h1{
 }
 
 /* SOBRE MI */
-.sobre-mi{
+.contenedor-textos{
   margin-left: 3vw;
 }
 .titulo{
-  color: #3DC9B0 !important;
+  color: rgb(227, 227, 227) !important;
   font-family: 'JetBrains Mono', sans-serif !important;
   font-style:normal !important;
+  margin: 0;
+}
+.subrayado{
+  width: 6rem;
+  height: .2rem;
+  background-color: rgba(61, 201, 176, 1);
 }
 .texto-cuerpo{
-  margin-left: 5vw;
-  margin-right: 3vw;
+  margin-top: 5vh;
+  width: 40vw;
   color: aliceblue !important;
   font-family: 'JetBrains Mono', sans-serif !important;
   font-style:normal !important;
@@ -104,4 +110,27 @@ h1{
 }
 .detalle{
   color: #F5DA4A !important;
+}
+/* PROYECTOS */
+.proyectos{
+  margin-top: 20vh;
+}
+/* HABILIDADES */
+.habilidades{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.titulo-habilidades{
+  color: #3DC9B0 !important;
+  align-self:center ;
+  margin: 0;
+  margin-top: 20vh;
+}
+.sbr-habi{
+  align-self:center ;
+}
+.logo-habilidad{
+  width: 5rem;
+  height: auto;
 }

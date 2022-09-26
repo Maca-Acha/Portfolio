@@ -5,6 +5,8 @@ import Inicio from './componentes/inicio'
 import SobreMi from './componentes/sobreMi'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Proyectos from './componentes/Proyectos'
+import Contacto from './componentes/Contacto'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,8 @@ function App() {
         <Navigation/>
         <Inicio />
         <SobreMi/>
+        <Proyectos/>
+        <Contacto/>
       </div>
 
   )
