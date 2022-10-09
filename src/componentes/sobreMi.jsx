@@ -1,3 +1,5 @@
+import Carrusel from './Carrusel'
+
 export default function SobreMi() {
 
     return (
@@ -6,6 +8,7 @@ export default function SobreMi() {
                 <h2 className="titulo">Sobre mi</h2>
                 <div className="subrayado"></div>
             </div>
+            <div className='contenedor-sobremi'>
                 <p className="texto-cuerpo">
                 Hola mi nombre es Macarena, soy programadora <span className="detalle">Full Stack en MERN</span> (MongDB, Express, React, Node). Gracias a mi paso en Mindhub, de más de 600 horas, modalidad full time, simulando un ambiente real, desarrollé distintos proyectos grupales e individuales, los cuales podrás observar mi Github.
 
@@ -14,9 +17,9 @@ export default function SobreMi() {
                 En mi desarrollo profesional soy una persona comprometida y responsable, buscando siempre obtener los mejores resultados, aprendiendo y progresando en cada momento.  
 
                 Busco la oportunidad de insertarme laboralmente dispuesta a capacitarme para mejorar mis capacidades, e integrarme en el mundo digital que es lo que me apasiona. 
-
                 </p>
-            
+                <Carrusel className='carrusel'/>
+            </div>
         </div>
     )
 }
