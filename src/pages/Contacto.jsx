@@ -1,7 +1,9 @@
+import Footer from '../componentes/Footer'
+
 export default function Contacto() {
     return (
         <div className=" contenedor-contacto" id='contacto'>
-            <div className="contenedor-textos">
+            <div className="contenedor-textos contenedor-textos-contacto">
                 <div>
                     <h2 className="titulo-contacto">Contacto</h2>
                 </div>
@@ -23,6 +25,7 @@ export default function Contacto() {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

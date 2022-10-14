@@ -10,7 +10,7 @@ import Contacto from './componentes/Contacto'
 function AppBlanco() {
 
   return (
-      <div className='App' >
+      <div className='App' id='app-blanco' >
         <Navigation/>
         <Inicio />
         <SobreMi/>

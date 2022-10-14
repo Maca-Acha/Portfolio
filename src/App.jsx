@@ -5,8 +5,6 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Proyectos from './pages/Proyectos'
 import Contacto from './pages/Contacto'
-import Footer from './componentes/Footer'
-
 
 function App() {
   return (
@@ -16,7 +14,6 @@ function App() {
         <SobreMi/>
         <Proyectos/>
         <Contacto className="contenedor-contacto"/>
-        <Footer />
       </div>
   )
 }

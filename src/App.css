@@ -15,6 +15,14 @@ body{
 .App{
   width: 90vw;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  background: #323232;
+}
+::-webkit-scrollbar-thumb {
+  background: #9E38B8;
+  border-radius: 5px;
+}
 
 /* NAVEGACION */
 .nav-completo{
@@ -39,19 +47,29 @@ body{
   font-weight: 400 !important;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.3s;
+  padding-bottom: .2rem;
+  border-bottom: #9e38b800 3px solid;
+  border-radius: .2rem ;
 }
 .link-nav:hover{
-  color: #9E38B8 !important;
-  transition: 0.2s;
-  
+  border-bottom: #9E38B8 3px solid;
+  transition: 0.3s;
+}
+.activo {
+  border-bottom: #9E38B8 3px solid;
+  border-radius: .2rem ;
+  transition: 0.3s;
 }
 
 /* INICIO */
+.cont-inicio{
+  height: 100vh;
+}
 .inicio{
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: 85%;
 }
 .inicio-texto{
   display: flex;
@@ -79,10 +97,49 @@ h1{
 .contenedor-foto{
   align-self: center;
 }
+.cont-animacion{
+  display: flex;
+  justify-content: center;
+}
+.bajar-animacion{
+  color: white;
+  font-size: 2rem;
+    cursor: pointer;
+    animation: arrow 6s ease .5s infinite normal forwards;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.639));
+}
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
 
 /* SOBRE MI */
 .contenedor-textos{
   margin-left: 3vw;
+  padding-top: 12vh;
 }
 .titulo{
   color: rgb(227, 227, 227) !important;
@@ -194,7 +251,6 @@ h1{
 }
 .habilidades-logos{
   display: flex;
-  margin-bottom: 3rem;
   justify-content: center;
   align-self: center;
 } 
@@ -211,7 +267,7 @@ h1{
   align-items: center;
 }
 .logo-habilidad{
-  width: 5rem;
+  width: 4rem;
   height: auto;
   align-self: center;
   align-items: center;
@@ -219,8 +275,8 @@ h1{
 .back-logo{
   display: flex;
   justify-content: center;
-  height: 8rem;
-  width: 8rem;
+  height: 6rem;
+  width: 6rem;
   background: #161616;
   box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
   padding: 1rem;
@@ -244,6 +300,9 @@ h1{
 }
 
 /* CONTACTO */
+.contenedor-textos-contacto{
+  padding-bottom: 5rem;
+}
 .titulo-contacto{
   color:#3DC9B0;
   background-color: #161616;
@@ -306,10 +365,34 @@ h1{
 /* FOOTER */
 .contenedor-footer{
   display: flex;
-  justify-content:flex-end;
+  flex-direction: column;
+  justify-content:center;
+  height: 20vh;
 }
 .texto-footer{
+  align-self:center;
+  align-items:flex-end;
+  padding-bottom: .5rem;
   color: rgb(214, 214, 214) !important;
   font-family: 'JetBrains Mono', sans-serif !important;
   font-style:normal !important;
+  font-size: .7rem !important;
+  margin: 0 !important;
+}
+.iconos-sociales{
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  align-self: center;
+  align-items: center;
+  height: 90%;
+}
+.icono-social{
+  color: #ffffff !important;
+  transition: .25s;
+}
+.icono-social:hover{
+  color: #9E38B8 !important;
+  transition: .25s;
 }
