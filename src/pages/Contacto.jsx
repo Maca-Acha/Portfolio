@@ -1,6 +1,6 @@
 export default function Contacto() {
     return (
-        <div className=" contenedor-contacto">
+        <div className=" contenedor-contacto" id='contacto'>
             <div className="contenedor-textos">
                 <div>
                     <h2 className="titulo-contacto">Contacto</h2>

@@ -1,11 +1,12 @@
 import Navigation from './componentes/Navegacion'
-import Inicio from './componentes/inicio'
-import SobreMi from './componentes/sobreMi'
+import Inicio from './pages/Inicio'
+import SobreMi from './pages/Sobremi'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Proyectos from './componentes/Proyectos'
-import Contacto from './componentes/Contacto'
+import Proyectos from './pages/Proyectos'
+import Contacto from './pages/Contacto'
 import Footer from './componentes/Footer'
+
 
 function App() {
   return (

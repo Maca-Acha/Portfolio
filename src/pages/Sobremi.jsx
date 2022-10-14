@@ -1,9 +1,9 @@
-import Carrusel from './Carrusel'
+import Carrusel from '../componentes/Carrusel'
 
 export default function SobreMi() {
 
     return (
-        <div className="contenedor-textos">
+        <div className="contenedor-textos" id='sobremi'>
             <div className="back-titulo">
                 <h2 className="titulo">Sobre mi</h2>
                 <div className="subrayado"></div>

@@ -1,8 +1,8 @@
 import foto from "../assets/foto-principal.png"
 
-export default function inicio() {
+export default function Inicio() {
     return (
-        <div className="inicio">
+        <div className="inicio" id='inicio'>
             <div className="inicio-texto">
                 <div className="primera-linea">
                     <h1>Hola, soy</h1>

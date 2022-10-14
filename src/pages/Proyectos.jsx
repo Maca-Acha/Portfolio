@@ -1,16 +1,16 @@
-import Habilidades from './Habilidades'
+import Habilidades from '../componentes/Habilidades'
 import extreme from '../assets/extreme.png'
 import insignia from '../assets/insignia-MERN.png'
-import diplomatic from '../assets/diplomatic.png'
+import diplomatic from '../assets/diplomatic.png' 
 
 const proyectos =[
     {nombre: "Insignia MERN", src: insignia, id: 1},
     {nombre: "Extreme", src: extreme, id: 2},
     {nombre: "Diplomatic Week", src: diplomatic, id: 3}
 ]
-export default function Proyectos() {
+export default function Proyectos(props) {
     return (
-        <div className="contenedor-textos">
+        <div className="contenedor-textos" id='proyectoss'>
             <div className='proyectos'>
                 <h2 className="titulo">Proyectos</h2>
                 <div className="subrayado"></div>
