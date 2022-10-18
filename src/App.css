@@ -11,6 +11,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
   }
 .App{
   width: 90vw;
@@ -228,7 +229,6 @@ h1{
 }
 .nombre-proyecto{
   color: #ffffff;
-  /* background-color: #9e38b841; */
   padding: 1rem;
   border-radius: 1.5rem;
 }
@@ -360,6 +360,23 @@ h1{
   color: #ffffff;
   width: 40vw;
   align-self: center;
+}
+/* CONTACTO - FORMULARIO*/
+input{
+  background: none;
+  border: none;
+  border-bottom: #9E38B8 2px solid;
+}
+input:focus{
+  border: rgba(0, 0, 0, 0);
+}
+input::placeholder, textarea::placeholder{
+  color: white;
+}
+textarea{
+  background: none;
+  border: #9E38B8 2px solid;
+  border-radius: .5rem;
 }
 
 /* FOOTER */

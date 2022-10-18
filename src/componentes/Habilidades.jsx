@@ -12,6 +12,9 @@ import git from "../assets/git.png"
 import bootstrap from "../assets/bootstrap.png"
 import express from "../assets/express.png"
 import mongo from "../assets/mongo.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 
 const logos = [
@@ -36,9 +39,13 @@ const logos3 = [
 ]
 
 export default function Habilidades() {
+    useEffect(()=>{
+        AOS.init()
+    },[])
+
     return (
         <div className="contenedor-habilidades">
-            <div className="habilidades">
+            <div className="habilidades" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <h2 className="titulo-habilidades">Habilidades</h2>
                 <div className="subrayado sbr-habi"></div>
             </div>
@@ -46,7 +53,7 @@ export default function Habilidades() {
                 <div className="habilidades-espaciado">
                     {logos.map(logo => {
                             return(
-                                <div className="cont-logo">
+                                <div className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                                     <div className="back-logo">
                                         <img className="logo-habilidad" key={logo.id} alt= {logo.nombre} src={logo.src} />
                                     </div>
@@ -60,7 +67,7 @@ export default function Habilidades() {
                 <div className="habilidades-centro">
                     {logos2.map(logo => {
                             return(
-                                <div className="cont-logo">
+                                <div className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                                     <div className="back-logo">
                                         <img className="logo-habilidad" key={logo.id} alt= {logo.nombre} src={logo.src} />
                                     </div>
@@ -74,7 +81,7 @@ export default function Habilidades() {
                 <div className="habilidades-espaciado">
                     {logos3.map(logo => {
                             return(
-                                <div className="cont-logo">
+                                <div className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                                     <div className="back-logo">
                                         <img className="logo-habilidad" key={logo.id} alt= {logo.nombre} src={logo.src} />
                                     </div>

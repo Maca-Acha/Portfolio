@@ -3,6 +3,9 @@ import extreme from '../assets/extreme.png'
 import insignia from '../assets/insignia-MERN.png'
 import diplomatic from '../assets/diplomatic.png' 
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const proyectos =[
     {nombre: "Insignia MERN", src: insignia, link:"https://www.credly.com/badges/89f0ad1e-865a-442f-8c39-1f05f1014c96/linked_in", id: 1},
@@ -10,6 +13,9 @@ const proyectos =[
     {nombre: "Diplomatic Week", src: diplomatic, link:"http://diplomaticweek.org/", id: 3}
 ]
 export default function Proyectos() {
+    useEffect(()=>{
+        AOS.init()
+    },[])
     return (
         <div className="contenedor-textos" id='proyectoss'>
             <div className='proyectos'>
@@ -24,7 +30,7 @@ export default function Proyectos() {
                         {proyectos.map(proyecto => {
                             return(
                                 <Router>
-                                    <a href={proyecto.link} className='cont-logo-proyecto'>
+                                    <a href={proyecto.link} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className='cont-logo-proyecto'>
                                         <img className="logo-proyecto" key={proyecto.id} alt= {proyecto.nombre} src={proyecto.src} />
                                         <p className='nombre-proyecto'>{proyecto.nombre}</p>
                                     </a>
