@@ -54,11 +54,11 @@ body{
   border-radius: .2rem ;
 }
 .link-nav:hover{
-  border-bottom: #9E38B8 3px solid;
+  border-bottom: #3DC9B0 3px solid;
   transition: 0.3s;
 }
 .activo {
-  border-bottom: #9E38B8 3px solid;
+  border-bottom: #3DC9B0 3px solid;
   border-radius: .2rem ;
   transition: 0.3s;
 }

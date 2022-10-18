@@ -30,7 +30,7 @@ export default function Proyectos() {
                         {proyectos.map(proyecto => {
                             return(
                                 <Router>
-                                    <a href={proyecto.link} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" className='cont-logo-proyecto'>
+                                    <a href={proyecto.link}  data-aos="zoom-in-up" className='cont-logo-proyecto'>
                                         <img className="logo-proyecto" key={proyecto.id} alt= {proyecto.nombre} src={proyecto.src} />
                                         <p className='nombre-proyecto'>{proyecto.nombre}</p>
                                     </a>
