@@ -7,7 +7,7 @@ export default function Navegacion() {
             <div className="nav-completo">
                 <div className='nav'>
                     <div className='cont-Link-nav'>
-                        <Link to="inicio" spy={true} smooth={true} duration={500} className="link-nav"  activeClass='activo'>Inicio</Link>
+                        <Link to="inicio" offset={-100} spy={true} smooth={true} duration={500} className="link-nav"  activeClass='activo'>Inicio</Link>
                         <div className='nav_activo-hover'></div>
                     </div>
                     <div className='cont-Link-nav'>
@@ -19,7 +19,7 @@ export default function Navegacion() {
                         <div className='nav_activo-hover'></div>
                     </div>
                     <div className='cont-Link-nav'>
-                        <Link to="contacto" spy={true} offset={10} smooth={true} duration={500} className="link-nav" activeClass='activo'>Contacto</Link>
+                        <Link to="contacto" spy={true} offset={-60} smooth={true} duration={500} className="link-nav" activeClass='activo'>Contacto</Link>
                         <div className='nav_activo-hover'></div>
                     </div>
                 </div>

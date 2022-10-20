@@ -13,9 +13,6 @@ body{
   justify-content: flex-start;
   
   }
-.App{
-  width: 90vw;
-}
 ::-webkit-scrollbar {
   width: 10px;
   background: #323232;
@@ -28,7 +25,7 @@ body{
 /* NAVEGACION */
 .nav-completo{
   position: fixed;
-  width: 90vw;
+  width: 100%;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -66,10 +63,11 @@ body{
 /* INICIO */
 .cont-inicio{
   height: 100vh;
+  padding-top: 12vh;
 }
 .inicio{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   height: 85%;
 }
 .inicio-texto{
@@ -81,7 +79,7 @@ body{
   display: flex ;
 }
 h1{
-  color: aliceblue !important;
+  color: rgb(232, 237, 242) !important;
   font-family: 'JetBrains Mono', sans-serif !important;
   font-style:normal !important;
   align-self: center;
@@ -92,7 +90,7 @@ h1{
 }
 .foto{
   max-width: 18vw;
-  max-height: auto;
+  margin-left: 3vw;
   
 }
 .contenedor-foto{
@@ -139,8 +137,12 @@ h1{
 
 /* SOBRE MI */
 .contenedor-textos{
-  margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
   padding-top: 12vh;
+  padding-bottom: 0;
 }
 .titulo{
   color: rgb(227, 227, 227) !important;
@@ -156,14 +158,14 @@ h1{
 .contenedor-sobremi{
   display: flex;
   width: 100%;
+  justify-content: space-around
 }
 .texto-cuerpo{
   margin-top: 5vh;
   width: 50%;
-  color: aliceblue !important;
+  color: rgb(232, 237, 242) !important;
   font-family: 'JetBrains Mono', sans-serif !important;
   font-style:normal !important;
-  font-size: 1.2rem;
 }
 .carrusel-item{
   height: 50vh;
@@ -255,7 +257,7 @@ h1{
   align-self: center;
 } 
 .habilidades-espaciado{
-  width: 100%;
+  width: 99%;
   display: flex;
   justify-content: space-around;
 } 
@@ -300,8 +302,20 @@ h1{
 }
 
 /* CONTACTO */
+.margen-contacto{
+  margin-top: 20vh;
+}
+.contenedor-contacto{
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .contenedor-textos-contacto{
-  padding-bottom: 5rem;
+  padding-bottom: 8vh;
+  width: 90vw;
+    align-content: center;
+    align-self: center;
 }
 .titulo-contacto{
   color:#3DC9B0;
@@ -310,9 +324,6 @@ h1{
   border-radius: 4rem;
   width:fit-content;
   padding: .5rem 1.3rem;
-}
-.contenedor-contacto{
-  margin-top: 20vh;
 }
 .formulario{
   display: flex;
@@ -381,6 +392,7 @@ textarea{
 
 /* FOOTER */
 .contenedor-footer{
+
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -406,10 +418,11 @@ textarea{
   height: 90%;
 }
 .icono-social{
-  color: #ffffff !important;
+  color: rgb(232, 237, 242) !important;
   transition: .25s;
 }
 .icono-social:hover{
   color: #9E38B8 !important;
   transition: .25s;
 }
+/*  ----------------- MEDIA QUERY ---------------   */
