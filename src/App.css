@@ -426,3 +426,74 @@ textarea{
   transition: .25s;
 }
 /*  ----------------- MEDIA QUERY ---------------   */
+@media(max-width:1016px){
+  .nav{
+    width: 45%;
+  }
+}
+@media(max-width:912px){
+  .carrusel{
+    width: 40%;
+    margin-left: 4rem;
+  }
+  .inputs{
+    width: 39vw;
+  }
+}
+@media(max-width:784px){
+  .contenedor-sobremi {
+    flex-direction: column;
+  }
+  .texto-cuerpo{
+    width: 100%;
+  }
+  .carrusel{
+    width: 100%;
+    margin-left: 0;
+  }
+  .carrusel-img{
+    width: 41vw;
+  }
+  .inicio{
+    flex-direction: column-reverse;
+  }
+  .foto{
+    margin-left: 0;
+    max-width: 24vw;
+  }
+}
+@media(max-width:701px){
+  .inicio-texto{
+    font-size: .8rem;
+    margin-top: 1rem;
+  }
+  .carrusel, .carrusel-item{
+    height: 39vh;
+  }
+  .contenedor-textos{
+    padding-top: 7vh;
+  }
+  .nav{
+    width: 50%;
+  }
+}
+@media(max-width:650px){
+  .logo-habilidad{
+    width: 3.5rem;
+  }
+  .back-logo{
+    width: 5rem;
+    height: 5rem;
+  }
+  .cont-formulario{
+    flex-direction: column;
+  }
+  .cont-texto-contacto{
+    width: 95%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .inputs{
+    width: 95%;
+  }
+}
