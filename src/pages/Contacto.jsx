@@ -5,17 +5,22 @@ import { useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 import fondo from '../assets/img4.svg'
 
+/* const estilo = {
+    backgroundsize: contain,
+    backgroundrepeat: no-repeat,
+} */
+
 export default function Contacto() {
     useEffect(()=>{
         AOS.init()
     },[])
     return (
-                <Parallax bgImage={fondo} strength={400}>
-        <div className=" contenedor-contacto" id='contacto'>
-            <div className="contenedor-textos-contacto">
-                <div>
-                    <h2 className="titulo-contacto">Contacto</h2>
-                </div>
+        <Parallax bgImage={fondo} strength={100} bgClassName="fondo-parallax">
+            <div className=" contenedor-contacto" id='contacto'>
+                <div className="contenedor-textos-contacto">
+                    <div>
+                        <h2 className="titulo-contacto">Contacto</h2>
+                    </div>
                     <div className="cont-formulario">
                         <div className="cont-texto-contacto" data-aos="fade-right">
                             <h5>Espero se contacten</h5>
@@ -33,9 +38,9 @@ export default function Contacto() {
                             </div>
                         </form>
                     </div>
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
-                </Parallax>
+        </Parallax>
     )
 }

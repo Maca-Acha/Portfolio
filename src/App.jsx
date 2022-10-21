@@ -12,12 +12,12 @@ import fondo2 from './assets/img2.svg'
 function App() {
   return (
       <div className='App' >
-        <Parallax bgImage={fondo1} strength={400}>
+        <Parallax bgImage={fondo1} strength={400} bgClassName="fondo-parallax">
           <Navigation/>
           <Inicio />
         </Parallax>
         <SobreMi/>
-        <Parallax bgImage={fondo2} strength={600}>
+        <Parallax bgImage={fondo2} strength={600} bgClassName="fondo-parallax">
           <Proyectos/>
         </Parallax>
         <div className='margen-contacto'>
