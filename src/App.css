@@ -459,16 +459,21 @@ textarea{
   }
   .foto{
     margin-left: 0;
-    max-width: 24vw;
+    max-width: 28vw;
+  }
+}
+@media(max-width:708px){
+  p{
+    font-size: .9rem;
+  }
+  .carrusel, .carrusel-item{
+    height: 38vh;
   }
 }
 @media(max-width:701px){
   .inicio-texto{
     font-size: .8rem;
     margin-top: 1rem;
-  }
-  .carrusel, .carrusel-item{
-    height: 39vh;
   }
   .contenedor-textos{
     padding-top: 7vh;
@@ -521,6 +526,9 @@ textarea{
   p{
     font-size: .6rem !important
   }
+  .carrusel{
+    border-radius: 3rem;
+  }
   .carrusel, .carrusel-item{
     width: 60vw;
     height: 30vh;
@@ -532,14 +540,39 @@ textarea{
 }
 @media (max-width:524px) {
   .contenedor-textos{
-    padding: .5rem;
+    padding: 1.5rem;
   }
   .logo-proyecto{
     width: 4rem;
+  }
+  .titulo-sobremi{
+    margin-top: 10vh;
+  }
+  .cont-proyecto{
+    margin-top: 5vh;
+  }
+  .titulo-habilidades{
+    margin-top: 12vh;
+  }
+  .fondo-parallax-proyecto{
+    background-size: contain
+  }
+  .cont-logo-proyecto{
+    border-radius: 1rem;
+    padding: .3rem;
   }
 }
 @media (max-width:500px){
   .nav{
     width: 80%;
+  }
+}
+@media (max-width:446px){
+  .back-logo {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .logo-habilidad {
+    width: 2.5rem;
   }
 }

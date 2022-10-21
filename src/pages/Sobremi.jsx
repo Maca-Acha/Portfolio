@@ -5,7 +5,7 @@ export default function SobreMi() {
     return (
         <div className="contenedor-textos" id='sobremi'>
             <div className="back-titulo">
-                <h2 className="titulo">Sobre mi</h2>
+                <h2 className="titulo titulo-sobremi">Sobre mi</h2>
                 <div className="subrayado"></div>
             </div>
             <div className='contenedor-sobremi'>

@@ -11,7 +11,7 @@ export default function Navegacion() {
                         <div className='nav_activo-hover'></div>
                     </div>
                     <div className='cont-Link-nav'>
-                        <Link to="sobremi" spy={true} offset={10} smooth={true} duration={500} className="link-nav" activeClass='activo'>Sobre mi</Link>
+                        <Link to="sobremi" spy={true} offset={10} smooth={true} duration={500} id="link-nav-sobremi" className="link-nav" activeClass='activo'>Sobre mi</Link>
                         <div className='nav_activo-hover'></div>
                     </div>
                     <div className='cont-Link-nav'>
