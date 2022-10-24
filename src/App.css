@@ -21,6 +21,9 @@ body{
   background: #9E38B8;
   border-radius: 5px;
 }
+p{
+  font-size: 1.2rem;
+}
 
 /* NAVEGACION */
 .nav-completo{
