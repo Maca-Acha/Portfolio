@@ -216,6 +216,11 @@ h1{
   align-items: center;
   
 }
+.nombre-proyecto{
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
 .cont-logo-proyecto{
   display: flex;
   flex-direction: column;
@@ -223,20 +228,16 @@ h1{
   margin-right: 2rem;
   border-radius: 2rem;
   box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.25);
-  transition: 0.5s;
+  transition: .8s;
   cursor: pointer;
 }
 .cont-logo-proyecto:hover{
   background-color: #ffffff4c;
   box-shadow: none;
   border-radius: 2rem;
-  transition: 0.5s;
+  transition: .6s;
 }
-.nombre-proyecto{
-  color: #ffffff;
-  padding: 1rem;
-  border-radius: 1.5rem;
-}
+
 
 /* HABILIDADES */
 .habilidades{
@@ -297,11 +298,11 @@ h1{
 #nombre-logo-skil{
   color: #ffffff !important;
   opacity: 0 !important;
-  transition: .5s;
+  transition: .6s;
 }
 .cont-logo:hover #nombre-logo-skil{
   opacity: 1 !important;
-  transition: .5s;
+  transition: .6s;
 }
 
 /* CONTACTO */
