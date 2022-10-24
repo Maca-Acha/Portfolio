@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="iconos-sociales" >
                 <a className="icono-social" href="https://github.com/Maca-Acha"><BsGithub/></a>
                 <a className="icono-social" href="https://www.linkedin.com/in/macarena-acha/"><BsLinkedin/></a>
-                <a className="icono-social" href="https://github.com/Maca-Acha"><BsTelegram/></a>
+                <a className="icono-social" href="https://t.me/MacaAcha"><BsTelegram/></a>
                 <a className="icono-social" href="https://wa.me/542213641044"><BsWhatsapp/></a>
                 <a className="icono-social" href="mailto:achamariamacarena@gmail.com"><MdAlternateEmail/></a>
             </div>
