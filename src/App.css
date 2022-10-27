@@ -34,7 +34,7 @@ p{
   justify-content: center;
   background: rgb(30,30,30);
   background: linear-gradient(180deg, rgba(30,30,30,1) 40%, rgba(52,55,68,0) 100%);
-  z-index: 10000;
+  z-index: 1000;
 }
 .nav{
   width: 30%;
