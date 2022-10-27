@@ -5,10 +5,6 @@ import { useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 import fondo from '../assets/img4.svg'
 
-/* const estilo = {
-    backgroundsize: contain,
-    backgroundrepeat: no-repeat,
-} */
 
 export default function Contacto() {
     useEffect(()=>{
@@ -23,7 +19,6 @@ export default function Contacto() {
                     </div>
                     <div className="cont-formulario">
                         <div className="cont-texto-contacto" data-aos="fade-right">
-                            <h5>Espero se contacten</h5>
                             <p>Busco la oportunidad de insertarme laboralmente dispuesta a capacitarme para mejorar mis capacidades, e integrarme en el mundo digital que es lo que me apasiona. </p>
                         </div>
                         <form className="formulario" data-aos="fade-left">

@@ -19,7 +19,7 @@ export default function Navegacion() {
                         <div className='nav_activo-hover'></div>
                     </div>
                     <div className='cont-Link-nav'>
-                        <Link to="contacto" spy={true} offset={-45} smooth={true} duration={500} className="link-nav" activeClass='activo'>Contacto</Link>
+                        <Link to="contacto" spy={true} offset={-10} smooth={true} duration={500} className="link-nav" activeClass='activo'>Contacto</Link>
                         <div className='nav_activo-hover'></div>
                     </div>
                 </div>
