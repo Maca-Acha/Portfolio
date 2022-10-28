@@ -431,6 +431,11 @@ textarea{
 }
 
 /*  ----------------- MEDIA QUERY ---------------   */
+@media(max-width:1064px){
+  .inicio-texto{
+    font-size: .7rem;
+  }
+}
 @media(max-width:1016px){
   .nav{
     width: 45%;
@@ -443,6 +448,13 @@ textarea{
   }
   .inputs{
     width: 39vw;
+  }
+  .inicio{
+    flex-direction: column-reverse;
+  }
+  .foto{
+    margin-left: 0;
+    max-width: 22vw;
   }
 }
 @media(max-width:784px){
@@ -459,13 +471,6 @@ textarea{
   .carrusel-img{
     width: 41vw;
   }
-  .inicio{
-    flex-direction: column-reverse;
-  }
-  .foto{
-    margin-left: 0;
-    max-width: 28vw;
-  }
 }
 @media(max-width:708px){
   p{
@@ -476,10 +481,6 @@ textarea{
   }
 }
 @media(max-width:701px){
-  .inicio-texto{
-    font-size: .8rem;
-    margin-top: 1rem;
-  }
   .contenedor-textos{
     padding-top: 7vh;
   }
@@ -506,13 +507,17 @@ textarea{
   .inputs{
     width: 95%;
   }
+  .nav{
+    width: 65%;
+  }
 }
 @media (max-width:625px) {
   .inicio{
     width: auto;
   }
-  h1{
-    font-size: 2.5rem !important
+  .inicio-texto{
+    font-size: .5rem;
+    margin-top: 2.2rem;
   }
   .contenedor-textos{
     padding: 2rem;
