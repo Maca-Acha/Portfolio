@@ -218,7 +218,8 @@ h1{
 }
 .nombre-proyecto{
   color: #ffffff;
-  padding: 1rem;
+  text-align: center;
+  padding: 1.5rem;
   border-radius: 1.5rem;
 }
 .cont-logo-proyecto{
@@ -385,7 +386,9 @@ input{
   border-bottom: #9E38B8 2px solid;
 }
 input:focus{
-  border: rgba(0, 0, 0, 0);
+  outline:none;
+  border-bottom: #3DC9B0 solid 2px;
+
 }
 input::placeholder, textarea::placeholder{
   color: white;
@@ -394,6 +397,10 @@ textarea{
   background: none;
   border: #9E38B8 2px solid;
   border-radius: .5rem;
+}
+textarea:focus{
+  outline:none;
+  border:#3DC9B0 solid 2px;
 }
 
 /* FOOTER */
@@ -441,10 +448,16 @@ textarea{
     width: 45%;
   }
 }
+@media(max-width:989px){
+  .texto-cuerpo{
+    font-size: .8rem;
+  }
+}
 @media(max-width:912px){
   .carrusel{
     width: 40%;
     margin-left: 4rem;
+    margin-top: 5vh;
   }
   .inputs{
     width: 39vw;
@@ -467,6 +480,7 @@ textarea{
   .carrusel{
     width: 100%;
     margin-left: 0;
+    margin-top: 0;
   }
   .carrusel-img{
     width: 41vw;
@@ -521,6 +535,13 @@ textarea{
   }
   .contenedor-textos{
     padding: 2rem;
+  }
+  .iconos-sociales{
+    font-size: 1.5rem;
+  }
+  .texto-footer {
+    font-size: .8rem !important;
+    margin-top: .4rem;
   }
 }
 @media(max-width:550px){
