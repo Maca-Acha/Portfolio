@@ -42,7 +42,7 @@ const logos3 = [
 
 export default function Habilidades() {
     useEffect(()=>{
-        AOS.init()
+        AOS.init({duration:500})
     },[])
 
     return (

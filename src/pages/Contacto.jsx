@@ -32,7 +32,7 @@ const handleSubmit = async (e)=> {
 
 export default function Contacto() {
     useEffect(()=>{
-        AOS.init()
+        AOS.init({duration:900})
     },[])
     return (
         <Parallax bgImage={fondo} strength={100} bgClassName="fondo-parallax">

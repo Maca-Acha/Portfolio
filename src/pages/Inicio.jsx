@@ -10,17 +10,17 @@ export default function Inicio() {
                 <div className="inicio" id='inicio'>
                     <div className="inicio-texto">
                         <div className="primera-linea">
-                            <h1>Hola, soy lo mas</h1>
+                            <h1>Hola, soy</h1>
                             <h1 className="nombre"> Macarena Acha</h1>
                         </div>
-                        <h1>Desarrolladora Full Stack
-                        </h1>
+                        <h2>Desarrolladora Full Stack
+                        </h2>
                     </div>
                     <div className="contenedor-foto">
                         <img alt="foto" src={foto} className="foto" />
                     </div>            
                 </div>
-                <Link to='sobremi' className="cont-animacion">
+                <Link to='sobremi' spy={true} smooth={true} className="cont-animacion">
                     <IoIosArrowDown className="bajar-animacion"/>
                 </Link>
             </div>

@@ -14,7 +14,7 @@ const proyectos =[
 ]
 export default function Proyectos() {
     useEffect(()=>{
-        AOS.init()
+        AOS.init({duration:600})
     },[])
     return (
         <div className="contenedor-textos" id='proyectoss'>
