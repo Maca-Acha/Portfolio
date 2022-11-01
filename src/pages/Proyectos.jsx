@@ -23,7 +23,7 @@ export default function Proyectos() {
                 <div className="subrayado"></div>
             </div>
                 <p className="texto-cuerpo texto-proyectos">
-                En mi paso en el bootcamp, como en la fundación FPHV, he desarrollado distintos proyectos tanto individuales como en equipo. Me han ayudado a desarrollar distintas habilidades que se pueden ver reflejadas en los ejemplos de aqui abajo, como en el certificado otorgado por el bootcamp.
+                En mi paso en el bootcamp, como en la fundación FPHV, he desarrollado distintos proyectos tanto individuales como en equipo. Me han ayudado a desarrollar distintas habilidades que se pueden ver reflejadas en los ejemplos de aquí abajo, como en el certificado otorgado por el bootcamp.
                 </p>
                 <div className='cont-proyecto'>
                     
