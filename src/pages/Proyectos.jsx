@@ -1,6 +1,7 @@
 import Habilidades from '../componentes/Habilidades'
 import extreme from '../assets/extreme.png'
 import insignia from '../assets/insignia-MERN.png'
+import mytinerary from '../assets/logo-blanco.png'
 import diplomatic from '../assets/diplomatic.png' 
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import AOS from 'aos';
@@ -10,6 +11,7 @@ import { useEffect } from 'react';
 const proyectos =[
     {nombre: "Insignia MERN", src: insignia, link:"https://www.credly.com/badges/89f0ad1e-865a-442f-8c39-1f05f1014c96/linked_in", id: 1},
     {nombre: "Extreme", src: extreme, link:"https://xtreme-games.herokuapp.com/", id: 2},
+    {nombre: "MyTinerary", src: mytinerary, link:"https://mytinerary-acha.netlify.app/", id: 2},
     {nombre: "Diplomatic Week", src: diplomatic, link:"http://diplomaticweek.org/", id: 3}
 ]
 export default function Proyectos() {
