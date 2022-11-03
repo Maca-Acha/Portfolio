@@ -1,7 +1,7 @@
 import Habilidades from '../componentes/Habilidades'
 import extreme from '../assets/extreme.png'
 import insignia from '../assets/insignia-MERN.png'
-import mytinerary from '../assets/logo-2.png'
+import mytinerary from '../assets/mytinerary.png'
 import diplomatic from '../assets/diplomatic.png' 
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import AOS from 'aos';
