@@ -307,21 +307,27 @@ h1{
 }
 
 /* CONTACTO */
+.footer-contacto{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .margen-contacto{
   margin-top: 20vh;
 }
 .contenedor-contacto{
   margin-top: 8vh;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .contenedor-textos-contacto{
-  padding-bottom: 8vh;
   width: 90vw;
     align-content: center;
     align-self: center;
+    
 }
 .titulo-contacto{
   color:#3DC9B0;
@@ -330,6 +336,7 @@ h1{
   border-radius: 4rem;
   width:fit-content;
   padding: .5rem 1.3rem;
+  margin-top: 4vh;
 }
 .formulario{
   display: flex;
@@ -371,11 +378,18 @@ h1{
 }
 .cont-formulario{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 .cont-texto-contacto{
   color: #ffffff;
   width: 40vw;
+  align-self: center;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+.texto-contacto{
+  text-align: center;
   align-self: center;
 }
 
@@ -407,8 +421,8 @@ textarea:focus{
 .contenedor-footer{
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  height: 17vh;
+  justify-content:space-around;
+  height: 20vh;
 }
 .texto-footer{
   align-self:center;
@@ -426,13 +440,12 @@ textarea:focus{
   width: 55%;
   align-self: center;
   align-items: center;
-  height: 90%;
 }
 .icono-social{
   color: rgb(232, 237, 242) !important;
   transition: .25s;
 }
-.icono-social:hover{
+.icono-social:hover svg{
   color: #9E38B8 !important;
   transition: .25s;
 }
