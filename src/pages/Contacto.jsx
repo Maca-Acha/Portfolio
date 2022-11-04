@@ -38,7 +38,7 @@ export default function Contacto() {
     },[])
     return (
         <div className='footer-contacto' id='contacto'>
-            <Parallax bgImage={fondo} strength={300} bgClassName="fondo-parallax">
+            <Parallax bgImage={fondo} strength={400} bgClassName="fondo-parallax">
                 <div className=" contenedor-contacto" >
                     <div className="contenedor-textos-contacto">
                         <div>
