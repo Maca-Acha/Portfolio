@@ -2,11 +2,10 @@ import Footer from '../componentes/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
-import { Parallax } from 'react-parallax';
 import fondo from '../assets/img4.svg'
-import { BsGithub, BsLinkedin, BsTelegram, BsWhatsapp} from "react-icons/bs";
-import { MdAlternateEmail } from "react-icons/md";
-/* import axios from "axios"
+import  { Parallax ,  Background } from 'react-parallax' ;
+/* 
+import axios from "axios"
 import {toast } from 'react-toastify'; */
 
 /* 
@@ -38,14 +37,14 @@ export default function Contacto() {
     },[])
     return (
         <div className='footer-contacto' id='contacto'>
-            <Parallax bgImage={fondo} strength={400} bgClassName="fondo-parallax">
-                <div className=" contenedor-contacto" >
+            <Parallax bgImage={fondo} strength={400} bgClassName="fondo-parallax" >
+                <div className=" contenedor-contacto" data-aos="fade-up" >
                     <div className="contenedor-textos-contacto">
                         <div>
                             <h2 className="titulo-contacto">Contacto</h2>
                         </div>
                         <div className="cont-formulario">
-                            <div className="cont-texto-contacto" data-aos="fade-right">
+                            <div className="cont-texto-contacto" >
                                 <p className='texto-contacto'>Busco la oportunidad de insertarme laboralmente dispuesta a capacitarme para mejorar mis capacidades, e integrarme en el mundo digital que es lo que me apasiona. </p>
                             </div>
                             {/* <form className="formulario" data-aos="fade-left" onSubmit={handleSubmit}>
@@ -62,7 +61,7 @@ export default function Contacto() {
                         </div>
                     </div>
                     <Footer />
-                </div>
+                </div>                
             </Parallax>
         </div>
     )

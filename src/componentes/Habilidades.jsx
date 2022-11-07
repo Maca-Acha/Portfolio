@@ -55,11 +55,11 @@ export default function Habilidades() {
                 <div className="habilidades-espaciado">
                     {logos.map(logo => {
                             return(
-                                <div className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                <div key={logo.id}  className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                                     <div className="back-logo">
-                                        <img className="logo-habilidad" key={logo.id} alt= {logo.nombre} src={logo.src} />
+                                        <img className="logo-habilidad" alt= {logo.nombre} src={logo.src} />
                                     </div>
-                                    <p id="nombre-logo-skil">{logo.nombre}</p>
+                                    <p id="nombre-logo-skil" >{logo.nombre}</p>
                                 </div>
                                 )
                         })}
@@ -69,9 +69,9 @@ export default function Habilidades() {
                 <div className="habilidades-centro">
                     {logos2.map(logo => {
                             return(
-                                <div className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                <div key={logo.id} className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                                     <div className="back-logo">
-                                        <img className="logo-habilidad" key={logo.id} alt= {logo.nombre} src={logo.src} />
+                                        <img className="logo-habilidad" alt= {logo.nombre} src={logo.src} />
                                     </div>
                                     <p id="nombre-logo-skil">{logo.nombre}</p>
                                 </div>
@@ -83,11 +83,11 @@ export default function Habilidades() {
                 <div className="habilidades-espaciado">
                     {logos3.map(logo => {
                             return(
-                                <div className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                <div key={logo.id} className="cont-logo" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                                     <div className="back-logo">
-                                        <img className="logo-habilidad" key={logo.id} alt= {logo.nombre} src={logo.src} />
+                                        <img className="logo-habilidad" alt= {logo.nombre} src={logo.src} />
                                     </div>
-                                    <p id="nombre-logo-skil">{logo.nombre}</p>
+                                    <p id="nombre-logo-skil" >{logo.nombre}</p>
                                 </div>
                                 )
                         })}

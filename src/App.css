@@ -37,7 +37,7 @@ p{
   z-index: 1000;
 }
 .nav{
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
 }
@@ -46,6 +46,7 @@ p{
   font-family: 'Montserrat', sans-serif !important;
   font-style:normal !important;
   font-weight: 400 !important;
+  font-size: 1.15rem;
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
@@ -214,7 +215,10 @@ h1{
   height: auto;
   align-self: center;
   align-items: center;
-  
+  margin-top: 1rem;
+}
+.ultimo-logo{
+  margin-right: 0 !important;
 }
 .nombre-proyecto{
   color: #ffffff;
@@ -389,6 +393,7 @@ h1{
   justify-content: center;
 }
 .texto-contacto{
+  margin: 0;
   text-align: center;
   align-self: center;
 }
@@ -451,6 +456,11 @@ textarea:focus{
 }
 
 /*  ----------------- MEDIA QUERY ---------------   */
+@media(max-width:1366px){
+  .cont-texto-contacto{
+    width: 70vw;
+  }
+}
 @media(max-width:1064px){
   .inicio-texto{
     font-size: .7rem;
@@ -458,7 +468,7 @@ textarea:focus{
 }
 @media(max-width:1016px){
   .nav{
-    width: 45%;
+    width: 50%;
   }
 }
 @media(max-width:989px){
@@ -512,7 +522,7 @@ textarea:focus{
     padding-top: 7vh;
   }
   .nav{
-    width: 50%;
+    width: 60%;
   }
 }
 @media(max-width:650px){

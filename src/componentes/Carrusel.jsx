@@ -20,13 +20,12 @@ export default function Carrusel() {
         <Carousel className='carrusel' data-aos="fade-left">
             {recursos.map(recurso => {
                 return(
-                <Carousel.Item className='carrusel-item'>
-                    <div className='cont-img'>
+                <Carousel.Item className='carrusel-item'key={recurso.id}>
+                    <div className='cont-img' >
                         <img
                         className="carrusel-img d-block"
                         src={recurso.src}
                         alt={recurso.name}
-                        key={recurso.id}
                         />
                     </div>
                 </Carousel.Item>

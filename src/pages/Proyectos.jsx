@@ -11,8 +11,8 @@ import { useEffect } from 'react';
 const proyectos =[
     {nombre: "Insignia MERN", src: insignia, link:"https://www.credly.com/badges/89f0ad1e-865a-442f-8c39-1f05f1014c96/linked_in", id: 1},
     {nombre: "Extreme", src: extreme, link:"https://xtreme-games.herokuapp.com/", id: 2},
-    {nombre: "MyTinerary", src: mytinerary, link:"https://mytinerary-acha.netlify.app/", id: 2},
-    {nombre: "Diplomatic Week", src: diplomatic, link:"http://diplomaticweek.org/", id: 3}
+    {nombre: "MyTinerary", src: mytinerary, link:"https://mytinerary-acha.netlify.app/", id: 3},
+    {nombre: "Diplomatic Week", src: diplomatic, link:"http://diplomaticweek.org/", id: 4}
 ]
 export default function Proyectos() {
     useEffect(()=>{
@@ -29,13 +29,20 @@ export default function Proyectos() {
                 </p>
                 <div className='cont-proyecto'>
                     
-                        {proyectos.map(proyecto => {
+                        {proyectos.map((proyecto) => {
                             return(
-                                <Router>
-                                    <a href={proyecto.link}  data-aos="zoom-in-up" className='cont-logo-proyecto'>
-                                        <img className="logo-proyecto" key={proyecto.id} alt= {proyecto.nombre} src={proyecto.src} />
-                                        <p className='nombre-proyecto'>{proyecto.nombre}</p>
-                                    </a>
+                                <Router key={proyecto.id}>
+                                    {proyecto.id === 4 ?
+                                        <Link to={proyecto.link} key={proyecto.id} data-aos="zoom-in-up" className='cont-logo-proyecto ultimo-logo'>
+                                            <img className="logo-proyecto" alt= {proyecto.nombre} src={proyecto.src} />
+                                            <p className='nombre-proyecto' >{proyecto.nombre}</p>
+                                        </Link> 
+                                        :
+                                        <Link to={proyecto.link} key={proyecto.id} data-aos="zoom-in-up" className='cont-logo-proyecto'>
+                                            <img className="logo-proyecto" alt= {proyecto.nombre} src={proyecto.src} />
+                                            <p className='nombre-proyecto' >{proyecto.nombre}</p>
+                                        </Link>
+                                    }
                                 </Router>
                             )
                         })}
