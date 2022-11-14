@@ -20,7 +20,7 @@ function App() {
           <Inicio />
         </Parallax>
         <SobreMi/>
-        <Parallax bgImage={fondo2} strength={600} bgClassName="fondo-parallax-proyecto">
+        <Parallax bgImage={fondo2} strength={400} bgClassName="fondo-parallax fondo-parallax-proyecto">
           <Proyectos/>
         </Parallax>
         <div className='margen-contacto'>
