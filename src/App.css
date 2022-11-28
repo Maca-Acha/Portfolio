@@ -515,8 +515,27 @@ textarea:focus{
   .carrusel-img{
     width: 41vw;
   }
-  .logo-proyecto{
-
+  .cont-proyecto{
+    flex-direction: column;
+    margin-bottom: .7rem;
+  }
+  .cont-logo-proyecto{
+    margin: 0;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }
+  .nav{
+    width: 80%;
+  }
+  .link-nav{
+    font-size: 1.5rem !important;
+  }
+  .cont-img, .carousel{
+    height: 25vh;
+  }
+  .foto{
+    max-width: 45vw;
+    margin-bottom: 1.5rem;
   }
   /* .fondo-parallax-proyecto{
     display: none;
@@ -586,10 +605,6 @@ textarea:focus{
   }
   .foto{
     max-width: 36vw;
-  }
-  .cont-proyecto{
-    flex-direction: column;
-    margin-bottom: .7rem;
   }
   .cont-logo-proyecto{
     margin: 0;
