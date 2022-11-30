@@ -246,7 +246,6 @@ h1{
 .cont-logo-proyecto:hover{
   background-color: #ffffff4c;
   box-shadow: none;
-  border-radius: 2rem;
   transition: .5s !important;
 }
 
@@ -528,7 +527,7 @@ textarea:focus{
     width: 80%;
   }
   .link-nav{
-    font-size: 1.5rem !important;
+    font-size: .95rem !important;
   }
   .cont-img, .carousel{
     height: 25vh;

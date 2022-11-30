@@ -31,12 +31,10 @@ export default function Proyectos() {
                     
                         {proyectos.map((proyecto, index) => {
                             return(
-                                <Router key={index}>
-                                    <Link to={proyecto.link} data-aos="zoom-in-up" className='cont-logo-proyecto' id={proyecto.id}>
-                                        <img className="logo-proyecto" alt= {proyecto.nombre} src={proyecto.src} />
-                                        <p className='nombre-proyecto' >{proyecto.nombre}</p>
-                                    </Link>
-                                </Router>
+                                <a href={proyecto.link} data-aos="zoom-in-up" className='cont-logo-proyecto' id={proyecto.id} key={index}>
+                                    <img className="logo-proyecto" alt= {proyecto.nombre} src={proyecto.src} />
+                                    <p className='nombre-proyecto' >{proyecto.nombre}</p>
+                                </a>
                             )
                         })}
                     
